@@ -5,7 +5,7 @@ export const Logo = () => {
     return (
         <div className={styles.Logo}>
             <GiPokerHand className={styles.Logo__icon}></GiPokerHand>
-            <span className={styles.Logo__text}>react poker</span>
+            <span className={styles.Logo__text}>royal spades poker</span>
         </div>
     );
 };

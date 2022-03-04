@@ -1,3 +1,20 @@
 .Navbar {
-    border: 2px solid red;
+    z-index: 11;
+
+    height: 60px;
+    width: 100%;
+    padding: 0 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+
+    transition: all 0.5s cubic-bezier(var(--cubic-bezier-easeOutCirc));
+}
+
+.Navbar.scrolled {
+    background-color: var(--color-secondary);
+    box-shadow: 0 2px 5px var(--color-dark);
 }

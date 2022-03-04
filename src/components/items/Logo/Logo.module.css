@@ -1,12 +1,19 @@
 .Logo {
-    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 .Logo__icon {
+    font-size: 5rem;
+    color: var(--color-primary);
 }
 
 .Logo__text {
     font-family: 'Comfortaa', sans-serif;
     text-transform: capitalize;
     font-weight: bold;
+    font-size: 2rem;
+
+    color: var(--color-light);
 }

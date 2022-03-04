@@ -1,12 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap');
 
+:root {
+    /* colors */
+    --color-primary: #ffe55e;
+    --color-secondary: #8094da;
+    --color-secondary-dark: #0e1428;
+
+    --color-light: #f8f8f8;
+    --color-dark: #231f20;
+
+    /* fonts */
+    --text-small: 1.2rem;
+    --text-medium: 1.6rem;
+    --text-big: 2rem;
+
+    --heading-small: 2.5rem;
+    --heading-medium: 3rem;
+    --heading-big: 3.5rem;
+    --heading-large: 4rem;
+
+    /* cubic beziers */
+    --cubic-bezier-easeOutCirc: 0, 0.55, 0.45, 1;
+    --cubic-bezier-easeInQuart: 0.5, 0, 0.75, 0;
+}
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
