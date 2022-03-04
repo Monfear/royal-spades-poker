@@ -6,9 +6,15 @@
     --color-primary: #ffe55e;
     --color-secondary: #8094da;
     --color-secondary-dark: #0e1428;
+    --color-tertiary: #da8080;
 
     --color-light: #f8f8f8;
     --color-dark: #231f20;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    /* testing */
 
     /* fonts */
     --text-small: 1.2rem;
