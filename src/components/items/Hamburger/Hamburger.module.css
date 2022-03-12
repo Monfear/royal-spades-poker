@@ -50,3 +50,9 @@
     position: absolute;
     bottom: 1.5rem;
 }
+
+@media (min-width: 1024px) {
+    .Hamburger {
+        display: none;
+    }
+}

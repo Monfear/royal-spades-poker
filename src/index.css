@@ -14,21 +14,25 @@
     --color-white: #fff;
     --color-black: #000;
 
-    /* testing */
-
     /* fonts */
     --text-small: 1.2rem;
     --text-medium: 1.6rem;
     --text-big: 2rem;
+    --text-large: 2.5rem
 
-    --heading-small: 2.5rem;
-    --heading-medium: 3rem;
-    --heading-big: 3.5rem;
-    --heading-large: 4rem;
+    --heading-small: 3rem;
+    --heading-medium: 3.5rem;
+    --heading-big: 4.5rem;
+    --heading-large: 5.5rem;
 
     /* cubic beziers */
     --cubic-bezier-easeOutCirc: 0, 0.55, 0.45, 1;
     --cubic-bezier-easeInQuart: 0.5, 0, 0.75, 0;
+
+    /* breakpoints */
+    /* --mq-small: 576px;
+    --mq-medium: 768px;
+    --mq-big: 1024px; */
 }
 
 *,

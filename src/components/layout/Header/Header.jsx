@@ -25,10 +25,10 @@ export const Header = () => {
 
                     <Button
                         styleModifier={{
-                            marginTop: '6rem',
+                            marginTop: '5rem',
                         }}
                     >
-                        find out more
+                        Find out more
                     </Button>
                 </div>
             </Container>

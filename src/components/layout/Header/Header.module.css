@@ -50,7 +50,7 @@
 }
 
 .Header__content__subheading {
-    font-size: var(--heading-big);
+    font-size: var(--heading-medium);
     text-transform: capitalize;
     color: var(--color-secondary);
     margin-top: 0.5rem;
@@ -74,5 +74,30 @@
 
     100% {
         transform: rotateY(360deg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Header__content__spade {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Header__content__spade {
+        margin-top: 13rem;
+    }
+
+    .Header__content__heading {
+        font-size: var(--text-big);
+    }
+
+    .Header__content__subheading {
+        font-size: var(--heading-large);
+    }
+
+    .Header__content__caption {
+        width: 90%;
+        margin-bottom: 1rem;
     }
 }

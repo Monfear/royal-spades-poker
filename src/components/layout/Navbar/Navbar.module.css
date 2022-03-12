@@ -18,3 +18,9 @@
     background-color: var(--color-secondary-dark);
     box-shadow: 0 2px 5px var(--color-dark);
 }
+
+@media (min-width: 1024px) {
+    .Navbar {
+        padding: 0 3rem;
+    }
+}
