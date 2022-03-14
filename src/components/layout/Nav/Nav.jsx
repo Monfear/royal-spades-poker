@@ -15,13 +15,13 @@ export const Nav = ({ isMobileMenuOpen }) => {
         <nav className={!isMobileMenuOpen ? styles.Nav : `${styles.Nav} ${styles.active}`}>
             <ul className={styles.Nav__items}>
                 <li className={styles.Nav__items__item}>
-                    <NavLink to='/1' className={setActiveLinkClass}>
-                        route 1
+                    <NavLink to='/' className={setActiveLinkClass}>
+                        home
                     </NavLink>
                 </li>
 
                 <li className={styles.Nav__items__item}>
-                    <NavLink to='/' className={setActiveLinkClass}>
+                    <NavLink to='/1' className={setActiveLinkClass}>
                         route 2
                     </NavLink>
                 </li>

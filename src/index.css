@@ -4,7 +4,9 @@
 :root {
     /* colors */
     --color-primary: #ffe55e;
+    --color-primary-light: #ffe042;
     --color-secondary: #8094da;
+    --color-secondary-light: #79d8ff;
     --color-secondary-dark: #0e1428;
     --color-tertiary: #da8080;
 
@@ -13,12 +15,13 @@
 
     --color-white: #fff;
     --color-black: #000;
+    --color-grey: #747474;
 
     /* fonts */
     --text-small: 1.2rem;
     --text-medium: 1.6rem;
     --text-big: 2rem;
-    --text-large: 2.5rem
+    --text-large: 2.5rem;
 
     --heading-small: 3rem;
     --heading-medium: 3.5rem;
