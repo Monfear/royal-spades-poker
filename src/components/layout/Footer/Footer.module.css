@@ -21,6 +21,9 @@
 }
 
 .Footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .Footer__Heading {
@@ -50,6 +53,14 @@
     color: var(--color-light);
     text-transform: uppercase;
     margin-bottom: 0.1rem;
+
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.Footer__links__link:active,
+.Footer__links__link:hover {
+    color: var(--color-secondary-light);
 }
 
 .Footer__contact {
@@ -81,7 +92,7 @@
 
 .Footer__newsletter__caption {
     font-size: calc(var(--text-medium) - 0.2rem);
-    color: var(--color-secondary);
+    color: var(--color-light);
 }
 
 .Footer__newsletter__caption::first-letter {
@@ -146,7 +157,7 @@
 }
 
 .Footer__bottom {
-    height: 40px;
+    height: 50px;
 
     display: flex;
     justify-content: center;
@@ -178,9 +189,10 @@
 
     .Footer__bottom {
         margin: 2rem -3rem 0;
+        height: 40px;
     }
 
     .Footer__bottom__text {
-        font-size: var(--text-medium);
+        font-size: calc(var(--text-medium) - 0.2rem);
     }
 }

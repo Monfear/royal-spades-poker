@@ -58,3 +58,17 @@
         opacity: 1;
     }
 }
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(200px) rotateX(90deg) rotateY(90deg);
+    }
+
+    100% {
+        transform: translateY(0) rotateX(0) rotateY(0);
+    }
+}
+
+header .Button {
+    animation: moveUp 1s ease-out 1;
+}
