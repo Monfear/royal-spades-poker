@@ -136,22 +136,29 @@
     border-radius: 2px;
     margin-right: 0.5rem;
     padding: 0.1rem;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
-.Footer__contact__socials__icon:active {
+.Footer__contact__socials__icon:active,
+.Footer__contact__socials__icon:hover {
     background-color: var(--color-secondary-light);
 }
 
 .Footer__bottom {
-    height: 30px;
+    height: 40px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: var(--color-dark);
+    margin: 2rem -0.5rem 0;
 }
 
 .Footer__bottom__text {
     color: var(--color-secondary);
+    font-size: var(--text-small);
 }
 
 @media (min-width: 768px) {
@@ -167,6 +174,10 @@
 @media (min-width: 1024px) {
     .Footer {
         padding: 1rem 3rem 0;
+    }
+
+    .Footer__bottom {
+        margin: 2rem -3rem 0;
     }
 
     .Footer__bottom__text {

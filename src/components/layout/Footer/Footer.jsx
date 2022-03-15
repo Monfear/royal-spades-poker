@@ -66,7 +66,7 @@ export const Footer = () => {
                             }}
                             onClickHandler={submitForm}
                         >
-                            submit
+                            Submit
                         </Button>
                     </form>
                 </div>

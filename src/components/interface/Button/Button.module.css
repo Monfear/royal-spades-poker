@@ -50,6 +50,7 @@
         transition: all 0.5s cubic-bezier(var(--cubic-bezier-easeOutCirc));
         transform: translateX(-100%);
         opacity: 0;
+        pointer-events: none;
     }
 
     .Button:hover::before {
