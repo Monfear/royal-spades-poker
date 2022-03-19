@@ -1,0 +1,34 @@
+.Heading {
+    margin-bottom: 4rem;
+}
+
+.Heading__text {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: var(--heading-small);
+    color: var(--color-secondary-dark);
+
+    position: relative;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: inline-block;
+}
+
+.Heading__text::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    background-color: var(--color-secondary-light);
+
+    width: 80px;
+    height: 5px;
+    border-radius: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .Heading__text {
+        font-size: var(--heading-medium);
+    }
+}

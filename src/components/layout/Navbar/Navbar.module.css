@@ -16,7 +16,7 @@
 
 .Navbar.scrolled {
     background-color: var(--color-secondary-dark);
-    box-shadow: 0 2px 5px var(--color-dark);
+    box-shadow: 0 2px 5px var(--color-secondary-light);
 }
 
 @media (min-width: 1024px) {
