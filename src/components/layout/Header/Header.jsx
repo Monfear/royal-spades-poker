@@ -1,21 +1,25 @@
 import styles from './Header.module.css';
+
+import { useRef } from 'react';
+
 import pokerCards from './../../../assets/video/poker-cards.mp4';
+import spade from './../../../assets/img/spade.png';
 
 import { Container } from './../Container/Container';
 import { Button } from '../../interface/Button/Button';
 
-import spade from './../../../assets/img/spade.png';
-
 export const Header = () => {
+    const headerRef = useRef(null);
+
     const scrollToSection = () => {
         window.scrollTo({
-            top: document.querySelector('.Offer_Offer__4r7ch').offsetTop - 50,
+            top: headerRef.current.offsetHeight - 50,
             behavior: 'smooth',
         });
     };
 
     return (
-        <header className={styles.Header}>
+        <header className={styles.Header} ref={headerRef}>
             <div className={styles.Header__background}>
                 <video src={pokerCards} className={styles.Header__background__video} muted autoPlay loop></video>
                 <div className={styles.Header__background__cover}></div>
