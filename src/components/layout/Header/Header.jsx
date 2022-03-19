@@ -7,6 +7,13 @@ import { Button } from '../../interface/Button/Button';
 import spade from './../../../assets/img/spade.png';
 
 export const Header = () => {
+    const scrollToSection = () => {
+        window.scrollTo({
+            top: document.querySelector('.Offer_Offer__4r7ch').offsetTop - 50,
+            behavior: 'smooth',
+        });
+    };
+
     return (
         <header className={styles.Header}>
             <div className={styles.Header__background}>
@@ -27,6 +34,7 @@ export const Header = () => {
                         styleModifier={{
                             marginTop: '5rem',
                         }}
+                        onClickHandler={scrollToSection}
                     >
                         Find out more
                     </Button>
