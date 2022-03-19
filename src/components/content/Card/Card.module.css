@@ -67,6 +67,11 @@
     opacity: 1;
 }
 
+.Card.active:hover {
+    transform: scale(1.2) rotateX(-20deg) rotateY(-20deg);
+    box-shadow: 0 0 15px 10px var(--color-secondary-light);
+}
+
 @media (min-width: 1024px) {
     .Card {
         height: 370px;

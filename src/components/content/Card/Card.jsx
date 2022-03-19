@@ -1,28 +1,13 @@
-import { useEffect, useRef } from 'react';
 import styles from './Card.module.css';
+import { useEffect, useRef } from 'react';
+
+import { setCardObserver } from '../../../observers/cardObserver';
 
 export const Card = ({ title, description, img, icon }) => {
     const cardRef = useRef(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries, observer) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add(styles.active);
-
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            {
-                root: null,
-                threshold: 0,
-                rootMargin: '-100px 0px',
-            }
-        );
-
-        observer.observe(cardRef.current);
+        setCardObserver(cardRef.current, styles.active);
     }, []);
 
     return (
