@@ -13,15 +13,19 @@
 }
 
 @media (min-width: 1024px) {
+    .Offer {
+        padding: 4rem 0 8rem;
+    }
+
     .Offer__cards {
         flex-direction: row;
         justify-content: center;
-        gap: 7rem;
+        gap: 3rem;
     }
 }
 
-@media (min-width: 1024px) {
-    .Offer {
-        padding: 4rem 0 8rem;
+@media (min-width: 1440px) {
+    .Offer__cards {
+        gap: 7rem;
     }
 }

@@ -35,7 +35,9 @@
     /* breakpoints */
     /* --mq-small: 576px;
     --mq-medium: 768px;
-    --mq-big: 1024px; */
+    --mq-big: 1024px;
+    --mq-large: 1440px;
+    --mq-xlarge: 1600px; */
 }
 
 *,
