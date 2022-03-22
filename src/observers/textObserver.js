@@ -1,4 +1,4 @@
-export const setCardObserver = (element, className) => {
+export const setTextObserver = (element, className) => {
     const observer = new IntersectionObserver(
         (entries, observer) => {
             entries.forEach((entry) => {
@@ -12,7 +12,7 @@ export const setCardObserver = (element, className) => {
         {
             root: null,
             threshold: 0,
-            rootMargin: '-200px 0px',
+            rootMargin: '-150px 0px',
         }
     );
 

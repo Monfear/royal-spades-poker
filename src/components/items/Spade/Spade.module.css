@@ -1,0 +1,21 @@
+.Spade {
+    width: 120px;
+    margin: 0 auto;
+
+    animation: rotate 2s linear infinite alternate;
+}
+
+.Spade__img {
+    width: 100%;
+    filter: invert(84%) sepia(42%) saturate(574%) hue-rotate(351deg) brightness(101%) contrast(107%);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg) rotateX(0);
+    }
+
+    100% {
+        transform: rotateY(180deg) rotateX(-30deg);
+    }
+}

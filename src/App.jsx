@@ -4,6 +4,7 @@ import { Navbar } from './components/layout/Navbar/Navbar';
 import { Header } from './components/layout/Header/Header';
 import { Footer } from './components/layout/Footer/Footer';
 import { Offer } from './components/layout/Offer/Offer';
+import { About } from './components/layout/About/About';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Navbar></Navbar>
             <Header></Header>
             <Offer></Offer>
+            <About></About>
 
             <Footer></Footer>
         </div>

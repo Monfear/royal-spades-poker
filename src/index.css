@@ -6,7 +6,7 @@
     --color-primary: #ffe55e;
     --color-primary-light: #ffe042;
     --color-secondary: #8094da;
-    --color-secondary-light: #79d8ff;
+    --color-secondary-light: #b0c2ff;
     --color-secondary-dark: #0e1428;
 
     --color-light: #f8f8f8;
@@ -54,4 +54,5 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--color-light);
 }

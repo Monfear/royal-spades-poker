@@ -109,7 +109,7 @@
 
 @media only screen and (max-height: 540px) and (orientation: landscape) {
     .Header {
-        height: 140vh;
+        height: 150vh;
     }
 }
 
