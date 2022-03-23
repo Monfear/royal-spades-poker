@@ -35,8 +35,8 @@
 
 .Card__textContent__title {
     color: var(--color-light);
-    font-size: var(--text-big);
-    margin: 3rem 0 0.5rem;
+    font-size: var(--heading-small);
+    margin: 3.5rem 0 0.5rem;
     text-transform: uppercase;
 }
 
@@ -78,12 +78,7 @@
         width: 300px;
     }
 
-    .Card__textContent__title {
-        font-size: var(--text-large);
-        margin-top: 3.5rem;
-    }
-
     .Card__textContent__description {
-        font-size: var(--text-normal);
+        font-size: var(--text-medium);
     }
 }

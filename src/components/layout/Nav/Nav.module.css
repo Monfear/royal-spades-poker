@@ -35,7 +35,7 @@
 .Nav__items__item__link {
     text-decoration: none;
 
-    font-size: var(--heading-small);
+    font-size: var(--heading-medium);
     color: var(--color-light);
     text-transform: uppercase;
 
@@ -114,7 +114,7 @@
     }
 
     .Nav__items__item__link {
-        font-size: var(--text-medium);
+        font-size: var(--text-normal);
     }
 
     .Nav__items__item__link:hover {

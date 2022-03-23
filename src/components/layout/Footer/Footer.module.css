@@ -29,7 +29,7 @@
 .Footer__Heading {
     color: var(--color-primary-light);
     font-weight: normal;
-    font-size: var(--text-big);
+    font-size: var(--heading-small);
     text-transform: uppercase;
 
     position: relative;
@@ -49,7 +49,7 @@
 }
 
 .Footer__links__link {
-    font-size: var(--text-medium);
+    font-size: var(--text-normal);
     color: var(--color-light);
     text-transform: uppercase;
     margin-bottom: 0.1rem;
@@ -75,7 +75,7 @@
 }
 
 .Footer__contact__item__icon {
-    font-size: var(--text-medium);
+    font-size: var(--text-normal);
     color: var(--color-light);
 }
 
@@ -91,7 +91,7 @@
 }
 
 .Footer__newsletter__caption {
-    font-size: calc(var(--text-medium) - 0.2rem);
+    font-size: var(--text-medium);
     color: var(--color-light);
 }
 
@@ -141,7 +141,7 @@
 }
 
 .Footer__contact__socials__icon {
-    font-size: var(--heading-medium);
+    font-size: var(--heading-normal);
     color: var(--color-light);
     background-color: var(--color-secondary-dark);
     border-radius: 2px;
@@ -193,6 +193,6 @@
     }
 
     .Footer__bottom__text {
-        font-size: calc(var(--text-medium) - 0.2rem);
+        font-size: var(--text-normal);
     }
 }

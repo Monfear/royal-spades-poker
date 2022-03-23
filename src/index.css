@@ -18,15 +18,16 @@
 
     /* fonts */
     --text-small: 1.2rem;
-    --text-normal: 1.4rem;
-    --text-medium: 1.6rem;
-    --text-big: 2rem;
-    --text-large: 2.5rem;
+    --text-medium: 1.4rem;
+    --text-normal: 1.6rem;
+    --text-big: 1.8rem;
+    --text-large: 2rem;
 
-    --heading-small: 3rem;
-    --heading-medium: 3.5rem;
-    --heading-big: 4.5rem;
-    --heading-large: 5.5rem;
+    --heading-small: 2.2rem;
+    --heading-medium: 3rem;
+    --heading-normal: 3.5rem;
+    /* --heading-big: ; */
+    --heading-large: 6rem;
 
     /* cubic beziers */
     --cubic-bezier-easeOutCirc: 0, 0.55, 0.45, 1;
@@ -38,6 +39,8 @@
     --mq-big: 1024px;
     --mq-large: 1440px;
     --mq-xlarge: 1600px; */
+
+    /* (max-height: 540px) and (orientation: landscape) */
 }
 
 *,

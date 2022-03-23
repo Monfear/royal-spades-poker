@@ -1,5 +1,5 @@
 .ArrowUpIcon {
-    font-size: var(--heading-small);
+    font-size: var(--heading-medium);
     color: var(--color-light);
     background-color: var(--color-secondary-dark);
     border-radius: 50%;

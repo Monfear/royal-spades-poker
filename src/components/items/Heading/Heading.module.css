@@ -4,7 +4,7 @@
 
 .Heading__text {
     font-family: 'Comfortaa', sans-serif;
-    font-size: var(--heading-small);
+    font-size: var(--heading-medium);
     color: var(--color-secondary-dark);
     text-transform: capitalize;
 
@@ -37,7 +37,11 @@
 }
 
 @media (min-width: 1024px) {
+    .Heading {
+        margin-bottom: 6rem;
+    }
+
     .Heading__text {
-        font-size: var(--heading-medium);
+        font-size: var(--heading-normal);
     }
 }

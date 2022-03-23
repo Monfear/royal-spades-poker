@@ -1,6 +1,6 @@
 .Offer {
     background-color: var(--color-light);
-    padding: 4rem 0 6rem;
+    padding: 4rem 0 10rem;
 
     overflow: hidden;
 }
@@ -12,13 +12,11 @@
     gap: 3rem;
 }
 
-@media (min-width: 768px) {
-    .Offer {
-        padding: 4rem 0 10rem;
-    }
-}
-
 @media (min-width: 1024px) {
+    .Offer {
+        padding: 6rem 0 10rem;
+    }
+
     .Offer__cards {
         flex-direction: row;
         justify-content: center;

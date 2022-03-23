@@ -2,20 +2,28 @@
     background-image: linear-gradient(to right, var(--color-dark) 10%, var(--color-black));
     background-size: cover;
     background-position: center;
+
+    margin-top: -8rem;
+}
+
+.About__waveTop {
+}
+
+.About__waveBottom {
 }
 
 .About__content {
 }
 
 .About__content__img {
-    margin: 3rem auto;
+    margin: 4rem auto;
     width: 340px;
     box-shadow: 0 0 10px 0 var(--color-secondary-light);
     border-radius: 10px;
 }
 
 .About__content__description {
-    font-size: var(--text-medium);
+    font-size: var(--text-normal);
     color: var(--color-secondary-light);
 
     opacity: 0;
@@ -29,17 +37,17 @@
 }
 
 @media screen and (min-width: 576px) {
+    .About {
+        margin-top: -14rem;
+    }
+
     .About__content__img {
         display: block;
         margin-inline: auto;
     }
 }
 
-@media (min-width: 1024px) {
-    .About {
-        margin-top: -10rem;
-    }
-
+@media (min-width: 768px) {
     .About__content__img {
         display: block;
         margin: 5rem auto 8rem;
@@ -48,6 +56,14 @@
 }
 
 @media (min-width: 1440px) {
+    .About__waveTop {
+        margin-bottom: -8rem;
+    }
+
+    .About__waveBottom {
+        margin-top: -8rem;
+    }
+
     .About__content {
         display: grid;
         grid-template-columns: 55% 1fr;
