@@ -13,11 +13,23 @@ export const Carousel = () => {
     const sliderContainerRef = useRef(null);
     const dotsRef = useRef(null);
 
+    let intervalRef = useRef(null);
+
     useEffect(() => {
         setSliderContainerWidth();
+
+        intervalRef.current = setInterval(() => {
+            setItemIdx((prev) => prev + 1);
+        }, 3000);
+
+        return () => {
+            clearInterval(intervalRef.current);
+        };
     }, []);
 
     useEffect(() => {
+        clearInterval(intervalRef.current);
+
         const sliderElement = sliderContainerRef.current;
         const sliderItemWidth = sliderElement.children[0].offsetWidth;
 
@@ -38,6 +50,10 @@ export const Carousel = () => {
         setSliderTranslate(`-${sliderItemWidth * itemIdx}px`);
 
         sliderElement.style.transform = `translateX(${sliderTranslate})`;
+
+        intervalRef.current = setInterval(() => {
+            setItemIdx((prev) => prev + 1);
+        }, 3000);
     }, [itemIdx, sliderTranslate]);
 
     const setSliderContainerWidth = () => {
