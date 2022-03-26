@@ -8,7 +8,7 @@ import { Heading } from '../../items/Heading/Heading';
 
 export const Offer = () => {
     return (
-        <section className={styles.Offer}>
+        <section className={styles.Offer} id='offer'>
             <Container>
                 <Heading>Our offer</Heading>
                 <div className={styles.Offer__cards}>

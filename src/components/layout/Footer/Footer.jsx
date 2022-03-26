@@ -1,5 +1,7 @@
 import styles from './Footer.module.css';
 
+import { Link } from 'react-scroll';
+
 import { MdLocationPin } from 'react-icons/md';
 import { FaMobileAlt } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
@@ -24,11 +26,18 @@ export const Footer = () => {
             <div className={styles.Footer__Content}>
                 <div className={styles.Footer__links}>
                     <h2 className={styles.Footer__Heading}>navigation</h2>
-                    <p className={styles.Footer__links__link}>Home</p>
-                    <p className={styles.Footer__links__link}>Section</p>
-                    <p className={styles.Footer__links__link}>Section</p>
-                    <p className={styles.Footer__links__link}>Section</p>
-                    <p className={styles.Footer__links__link}>Section</p>
+                    <Link to='home' offset={0} smooth={true} duration={500} className={styles.Footer__links__link}>
+                        Home
+                    </Link>
+                    <Link to='offer' offset={-50} smooth={true} duration={500} className={styles.Footer__links__link}>
+                        Our offer
+                    </Link>
+                    <Link to='about' offset={70} smooth={true} duration={500} className={styles.Footer__links__link}>
+                        About us
+                    </Link>
+                    <Link to='gallery' offset={-100} smooth={true} duration={500} className={styles.Footer__links__link}>
+                        Gallery
+                    </Link>
                 </div>
 
                 <div className={styles.Footer__contact}>
@@ -73,7 +82,7 @@ export const Footer = () => {
             </div>
 
             <div className={styles.Footer__bottom}>
-                <p className={styles.Footer__bottom__text}>Copyright 2022 &copy; Royal Spades Poker. All rights reserved.</p>
+                <p className={styles.Footer__bottom__copy}>Copyright 2022 &copy; Royal Spades Poker. All rights reserved.</p>
             </div>
         </footer>
     );

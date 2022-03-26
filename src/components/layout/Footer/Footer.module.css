@@ -167,7 +167,7 @@
     margin: 2rem -0.5rem 0;
 }
 
-.Footer__bottom__text {
+.Footer__bottom__copy {
     color: var(--color-secondary);
     font-size: var(--text-small);
 }
@@ -187,12 +187,16 @@
         padding: 1rem 3rem 0;
     }
 
+    .Footer__contact__item__text {
+        font-size: var(--text-medium);
+    }
+
     .Footer__bottom {
         margin: 2rem -3rem 0;
         height: 40px;
     }
 
-    .Footer__bottom__text {
+    .Footer__bottom__copy {
         font-size: var(--text-normal);
     }
 }

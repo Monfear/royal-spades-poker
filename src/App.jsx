@@ -5,6 +5,7 @@ import { Header } from './components/layout/Header/Header';
 import { Footer } from './components/layout/Footer/Footer';
 import { Offer } from './components/layout/Offer/Offer';
 import { About } from './components/layout/About/About';
+import { Gallery } from './components/layout/Gallery/Gallery';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Header></Header>
             <Offer></Offer>
             <About></About>
+            <Gallery></Gallery>
 
             <Footer></Footer>
         </div>

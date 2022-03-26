@@ -19,7 +19,7 @@ export const Header = () => {
     };
 
     return (
-        <header className={styles.Header} ref={headerRef}>
+        <header className={styles.Header} ref={headerRef} id='home'>
             <div className={styles.Header__background}>
                 <video src={pokerCards} className={styles.Header__background__video} muted autoPlay loop></video>
                 <div className={styles.Header__background__cover}></div>
