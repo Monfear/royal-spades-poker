@@ -1,0 +1,90 @@
+.Timetable {
+}
+
+.Timetable__caption {
+    color: var(--color-secondary-light);
+    font-size: var(--text-normal);
+    margin-top: -2rem;
+    text-align: center;
+}
+
+.Timetable__table {
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Timetable__table__row {
+    border: 1px solid var(--color-grey);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--color-light);
+    font-size: var(--text-medium);
+    text-align: center;
+    text-transform: capitalize;
+
+    transition: all 0.5s;
+}
+
+.Timetable__table__row > *:not(:nth-child(5)) {
+    border-right: 1px solid var(--color-grey);
+    padding: 0.5rem;
+}
+
+.Timetable__table__row > *:nth-child(5) {
+    padding-right: 0.5rem;
+}
+
+.Timetable__table__row__icon {
+    font-size: var(--heading-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    border: none;
+}
+
+.Timetable__table__row__name {
+    flex-basis: 25%;
+}
+
+.Timetable__table__row__day {
+    flex-basis: 30%;
+}
+
+.Timetable__table__row__time {
+    flex-basis: 25%;
+}
+
+.Timetable__table__row__entry {
+    flex-basis: 15%;
+}
+
+@media (min-width: 768px) {
+    .Timetable__table {
+        margin-top: 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Timetable__table__row:hover {
+        background-color: var(--color-secondary);
+    }
+
+    .Timetable__caption {
+        font-size: var(--text-big);
+        margin-top: -3rem;
+    }
+
+    .Timetable__table__row {
+        font-size: var(--text-normal);
+    }
+}
+
+@media (min-width: 1600px) {
+}

@@ -1,0 +1,26 @@
+.FullScreenWrapper {
+    height: 100vh;
+}
+
+.FullScreenWrapper--timetable {
+    background-image: linear-gradient(rgba(14, 20, 40, 0.75), rgba(14, 20, 40, 0.75)), url(./../../../assets/img/timetable-bg.jpg);
+    background-size: cover;
+}
+
+@media (max-height: 540px) and (orientation: landscape) {
+    .FullScreenWrapper {
+        height: 200vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .FullScreenWrapper {
+        height: 120vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .FullScreenWrapper {
+        height: 100vh;
+    }
+}
