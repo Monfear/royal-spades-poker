@@ -136,6 +136,18 @@
     width: 30%;
 }
 
+.Footer__newsletter__error {
+    color: red;
+    font-size: var(--text-small);
+    margin-top: 0.5rem;
+}
+
+.Footer__newsletter__success {
+    color: green;
+    font-size: var(--text-small);
+    margin-top: 0.5rem;
+}
+
 .Footer__contact__socials {
     margin-top: 1.5rem;
 }

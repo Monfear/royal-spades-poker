@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import { useState } from 'react';
 
 import { Link } from 'react-scroll';
 
@@ -12,8 +13,30 @@ import { ArrowUpIcon } from '../../items/ArrowUpIcon/ArrowUpIcon';
 import { Button } from './../../interface/Button/Button';
 
 export const Footer = () => {
+    const [email, setEmail] = useState('');
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+    const [isFormValid, setIsFormValid] = useState(false);
+
     const submitForm = (e) => {
         e.preventDefault();
+        setIsFormSubmitted(true);
+
+        validateEmail();
+    };
+
+    const validateEmail = () => {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        if (re.test(email)) {
+            setIsFormValid(true);
+            setEmail('');
+        } else {
+            setIsFormValid(false);
+        }
+    };
+
+    const setEmailHandler = (e) => {
+        setEmail(e.target.value);
     };
 
     return (
@@ -65,19 +88,20 @@ export const Footer = () => {
                 <div className={styles.Footer__newsletter}>
                     <h2 className={styles.Footer__Heading}>subscribe newsletter</h2>
                     <p className={styles.Footer__newsletter__caption}>subscribe to receive company updates and news.</p>
-                    <form className={styles.Footer__newsletter__form}>
-                        <input type='email' placeholder='Enter email adress' className={styles.Footer__newsletter__form__input} />
+                    <form className={styles.Footer__newsletter__form} onSubmit={submitForm}>
+                        <input type='text' placeholder='Enter email adress' className={styles.Footer__newsletter__form__input} onChange={setEmailHandler} value={email} />
                         <Button
                             styleModifier={{
                                 width: '30%',
                                 height: '100%',
                                 fontSize: 'var(--text-medium)',
                             }}
-                            onClickHandler={submitForm}
                         >
                             Submit
                         </Button>
                     </form>
+                    {!isFormValid && isFormSubmitted && <p className={styles.Footer__newsletter__error}>Please enter correct email adress.</p>}
+                    {isFormValid && isFormSubmitted && <p className={styles.Footer__newsletter__success}>Your email address has been added successfully.</p>}
                 </div>
             </div>
 
