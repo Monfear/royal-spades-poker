@@ -1,5 +1,5 @@
 import styles from './Timetable.module.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Container } from '../../layout/Container/Container';
 
@@ -9,6 +9,12 @@ import { Heading } from '../../items/Heading/Heading';
 import { tournamentsInfo } from '../../../data/tournamentsInfo';
 
 export const Timetable = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+        });
+    }, []);
+
     return (
         <>
             <Navbar></Navbar>

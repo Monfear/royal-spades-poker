@@ -29,7 +29,11 @@ export const Navbar = () => {
 
     const watchScroll = (e) => {
         const windowScrollY = window.scrollY;
-        const navbarHeight = navbarRef.current.offsetHeight;
+        let navbarHeight;
+
+        if (navbarRef.current) {
+            navbarHeight = navbarRef.current.offsetHeight;
+        }
 
         if (windowScrollY > navbarHeight) {
             setIsNavbarScrolled(true);

@@ -2,6 +2,7 @@
     background-image: linear-gradient(rgba(14, 20, 40, 0.75), rgba(14, 20, 40, 0.75)), url(./../../../assets/img/timetable-bg.jpg);
     background-size: cover;
     padding: 8rem 0;
+    overflow: hidden;
 }
 
 .Timetable__caption {
@@ -32,6 +33,14 @@
     text-transform: capitalize;
 
     transition: all 0.5s;
+}
+
+.Timetable__table__row:nth-child(odd) {
+    animation: showLeft 1s ease-in;
+}
+
+.Timetable__table__row:nth-child(even) {
+    animation: showRight 1s ease-in;
 }
 
 .Timetable__table__row > *:not(:nth-child(5)) {
@@ -66,6 +75,26 @@
 
 .Timetable__table__row__entry {
     flex-basis: 15%;
+}
+
+@keyframes showLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes showRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @media (max-height: 540px) and (orientation: landscape) {

@@ -1,6 +1,6 @@
 import styles from './Offer.module.css';
 
-import { dataCards } from '../../../data/OfferData';
+import { dataCards } from '../../../data/offerData';
 
 import { Container } from './../Container/Container';
 import { Card } from '../../content/Card/Card';

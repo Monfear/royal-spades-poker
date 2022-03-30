@@ -1,5 +1,5 @@
 .Gallery {
-    padding: 2rem 0 4rem;
+    padding: 3rem 0 7rem;
     background-image: url(./../../../assets/img/gallery-bg.png);
     background-size: 100% 100%;
     background-position: 0 30px;
@@ -10,5 +10,11 @@
     .Gallery {
         padding: 0 0 12rem;
         background-position: center;
+    }
+}
+
+@media (min-width: 1600px) {
+    .Gallery {
+        margin-top: -4rem;
     }
 }
