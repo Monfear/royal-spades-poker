@@ -6,23 +6,16 @@ import { Container } from '../../layout/Container/Container';
 import { Navbar } from './../../layout/Navbar/Navbar';
 import { Footer } from './../../layout/Footer/Footer';
 import { Heading } from '../../items/Heading/Heading';
-import { FullScreenWrapper } from '../../layout/FullScreenWrapper/FullScreenWrapper';
 import { tournamentsInfo } from '../../../data/tournamentsInfo';
 
 export const Timetable = () => {
     return (
-        <section className={styles.Timetable}>
+        <>
             <Navbar></Navbar>
-            <FullScreenWrapper classModifier={'FullScreenWrapper--timetable'}>
+
+            <section className={styles.Timetable}>
                 <Container>
-                    <Heading
-                        classModifier={'Heading--light'}
-                        styleModifier={{
-                            paddingTop: '9rem',
-                        }}
-                    >
-                        Daily tournaments
-                    </Heading>
+                    <Heading classModifier={'Heading--light'}>Daily tournaments</Heading>
                     <p className={styles.Timetable__caption}>Our club offers exciting games every day among fantastic players and professional dealers.</p>
 
                     <div className={styles.Timetable__table}>
@@ -39,9 +32,9 @@ export const Timetable = () => {
                         })}
                     </div>
                 </Container>
-            </FullScreenWrapper>
+            </section>
 
             <Footer></Footer>
-        </section>
+        </>
     );
 };
