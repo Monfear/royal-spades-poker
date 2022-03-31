@@ -1,0 +1,58 @@
+.Question {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+
+    margin: 0 0.5rem;
+
+    transition: all 1s ease-in;
+}
+
+.Question:nth-child(1) {
+    margin-top: 1rem;
+}
+
+.Question:last-child {
+    margin-bottom: 1rem;
+}
+
+.Question:nth-child(odd) {
+    transform: translateX(-100%);
+}
+
+.Question:nth-child(even) {
+    transform: translateX(100%);
+}
+
+.Question.active {
+    transform: translateX(0);
+}
+
+.Question__title {
+    font-size: var(--heading-small);
+    color: var(--color-black);
+    margin-bottom: 0.5rem;
+}
+
+.Question__answer {
+    font-size: var(--text-medium);
+    color: var(--color-grey);
+}
+
+@media (min-width: 1024px) {
+    .Question {
+        padding: 2rem;
+    }
+
+    .Question:nth-child(2) {
+        margin-top: 1rem;
+    }
+
+    .Question__title {
+        font-size: var(--heading-small);
+    }
+
+    .Question__answer {
+        font-size: var(--text-normal);
+    }
+}

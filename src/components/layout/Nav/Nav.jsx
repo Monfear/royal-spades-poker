@@ -27,8 +27,8 @@ export const Nav = ({ isMobileMenuOpen }) => {
                 </li>
 
                 <li className={styles.Nav__items__item}>
-                    <NavLink to='/3' className={setActiveLinkClass}>
-                        route 3
+                    <NavLink to='/history' className={setActiveLinkClass}>
+                        history
                     </NavLink>
                 </li>
 
