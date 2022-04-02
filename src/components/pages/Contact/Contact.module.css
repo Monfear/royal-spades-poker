@@ -1,0 +1,22 @@
+.Contact {
+    background-image: linear-gradient(rgba(128, 148, 218, 1) 0%, rgba(176, 194, 255, 1) 100%);
+    padding: 8rem 0 4rem;
+}
+
+.Contact__caption {
+    color: var(--color-secondary-dark);
+    font-size: var(--text-normal);
+    margin-top: -2rem;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .Contact {
+        padding: 12rem 0 4rem;
+    }
+
+    .Contact__caption {
+        margin-top: -4rem;
+        font-size: var(--text-big);
+    }
+}

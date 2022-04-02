@@ -6,8 +6,15 @@ import { Footer } from './components/layout/Footer/Footer';
 import { Offer } from './components/layout/Offer/Offer';
 import { About } from './components/layout/About/About';
 import { Gallery } from './components/layout/Gallery/Gallery';
+import { useEffect } from 'react';
 
 function App() {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+        });
+    }, []);
+
     return (
         <div className={styles.App}>
             <Navbar></Navbar>

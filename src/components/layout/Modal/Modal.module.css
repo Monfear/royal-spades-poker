@@ -1,0 +1,48 @@
+.Modal {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    height: 100vh;
+    width: 100vw;
+
+    z-index: 99;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Modal__content {
+    height: 300px;
+    width: 300px;
+
+    background-color: var(--color-secondary-light);
+    border: 2px solid var(--color-secondary-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    border-radius: 10px;
+
+    animation: move 1s ease;
+}
+
+.Modal__content__text {
+    text-align: center;
+    font-size: var(--text-big);
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

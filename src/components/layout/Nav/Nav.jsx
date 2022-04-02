@@ -33,8 +33,8 @@ export const Nav = ({ isMobileMenuOpen }) => {
                 </li>
 
                 <li className={styles.Nav__items__item}>
-                    <NavLink to='/4' className={setActiveLinkClass}>
-                        route 4
+                    <NavLink to='/contact' className={setActiveLinkClass}>
+                        contact
                     </NavLink>
                 </li>
             </ul>
