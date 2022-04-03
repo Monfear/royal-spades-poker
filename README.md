@@ -18,6 +18,5 @@ On this page you can find a lot of information about the club such as general de
 To preview you can just click link attached to this repo or download zip/clone repo and npm install, npm start.
 
 <br>
-<br>
 
-<img src='./src/assets/img/aces-chips.jpg' style="width: 400px; border-radius: 50%">
+<center><img src='./src/assets/img/aces-chips.jpg' style="width: 400px; border-radius: 50%"></center>
